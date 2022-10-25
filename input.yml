@@ -4,5 +4,5 @@ versions:
 items:
     - name: 'zlib'
       url: https://github.com/madler/zlib/releases/download/v${zlib_version}/zlib-${zlib_version}.tar.gz
-    - name: 'chromium'
-      url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${chromium_version}.tar.xz'
+    # - name: 'chromium'
+    #   url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${chromium_version}.tar.xz'
