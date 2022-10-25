@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download
+        run: |
+          sudo apt update
+          sudo apt install aria2 python3 -y
+          python3 ./init_download_list.py
+          aria2c --dir=${GITHUB_WORKSPACE}/downloads --continue=true --input-file=tmp/aria2c_input.txt
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            downloads/*
+          tag_name: ${{ github.run_id }}
+

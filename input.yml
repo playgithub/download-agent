@@ -1,0 +1,8 @@
+versions:
+    zlib_version: '1.2.13'
+    chromium_version: '106.0.5249.119'
+items:
+    - name: 'zlib'
+      url: https://github.com/madler/zlib/releases/download/v${zlib_version}/zlib-${zlib_version}.tar.gz
+    - name: 'chromium'
+      url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${chromium_version}.tar.xz'
