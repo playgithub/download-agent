@@ -22,11 +22,11 @@ jobs:
       - name: Create time tag
         id: create_time_tag
         run: |
-          date +'%Y-%m-%d %H:%m:%S'
+          echo ::set-output name=RELEASE_TAG::`date +'%Y-%m-%d %H:%m:%S'`
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             downloads/*
-          tag_name: ${{ steps.create_time_tag.outputs }}
+          tag_name: ${{ steps.create_time_tag.outputs.RELEASE_TAG }}
 
