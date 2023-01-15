@@ -8,4 +8,4 @@
 
 ## Released URL
 e.g.
-https://github.com/playgithub/download-agent/releases/download/Downloads/chromium-107.0.5304.121.tar.xz
+https://github.com/playgithub/download-agent/releases/download/Downloads/chromium-${version}.tar.xz
