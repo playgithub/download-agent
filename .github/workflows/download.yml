@@ -17,7 +17,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install aria2 python3 -y
-          python3 ./generate_download_list.py
+          python3 ./download_and_show_url.py
           aria2c --dir=./downloads --continue=true --input-file=./aria2c_input.txt
       - name: Release
         uses: softprops/action-gh-release@v1
