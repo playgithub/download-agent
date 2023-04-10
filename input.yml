@@ -1,11 +1,11 @@
 - name: 'chromium'
-  version: '111.0.5563.146'
+  version: '112.0.5615.49'
   url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${version}.tar.xz'
-  download: false
-  show_url: false
+  download: true
+  show_url: true
 
 - name: 'vscodium'
-  version: '1.77.0.23093'
+  version: '1.77.1.23095'
   url: 'https://github.com/VSCodium/vscodium/releases/download/${version}/VSCodium-linux-x64-${version}.tar.gz'
   download: false
   show_url: true
