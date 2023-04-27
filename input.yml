@@ -1,5 +1,5 @@
 - name: 'chromium'
-  version: '112.0.5615.49'
+  version: '112.0.5615.165'
   url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${version}.tar.xz'
   download: true
   show_url: true
@@ -8,4 +8,4 @@
   version: '1.77.1.23095'
   url: 'https://github.com/VSCodium/vscodium/releases/download/${version}/VSCodium-linux-x64-${version}.tar.gz'
   download: false
-  show_url: true
+  show_url: false
