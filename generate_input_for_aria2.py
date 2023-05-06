@@ -1,7 +1,7 @@
 import string
 import yaml
 
-def download(items):
+def generate_input_for_aria2(items):
     with open('./aria2c_input.txt', 'w', encoding = 'utf-8') as f:
         for item in items:
             if item['download']:
@@ -15,4 +15,4 @@ with open('input.yml', 'r', encoding = 'utf-8') as f:
 
 items = yaml.safe_load(file_content)
 
-download(items)
+generate_input_for_aria2(items)
