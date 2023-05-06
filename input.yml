@@ -1,5 +1,5 @@
 - name: 'chromium'
-  version: '112.0.5615.165'
+  version: '113.0.5672.63'
   url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${version}.tar.xz'
   download: true
   show_url: true
