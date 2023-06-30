@@ -1,8 +1,8 @@
 - name: 'chromium'
-  version: '113.0.5672.63'
+  version: '114.0.5735.198'
   url: 'https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${version}.tar.xz'
-  download: false
-  show_url: false
+  download: true
+  show_url: true
 
 - name: 'vscodium'
   version: '1.77.1.23095'
